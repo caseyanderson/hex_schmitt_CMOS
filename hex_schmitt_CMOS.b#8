@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.001" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -533,26 +533,24 @@ type 0204, grid 5 mm</description>
 <rectangle x1="-2.032" y1="-0.254" x2="-1.778" y2="0.254" layer="51"/>
 <rectangle x1="1.778" y1="-0.254" x2="2.032" y2="0.254" layer="51"/>
 </package>
-<package name="E2,5-5" urn="urn:adsk.eagle:footprint:22845/1">
+<package name="E1,8-4_56PADS" urn="urn:adsk.eagle:footprint:22840/1" locally_modified="yes">
 <description>&lt;b&gt;ELECTROLYTIC CAPACITOR&lt;/b&gt;&lt;p&gt;
-grid 2.54 mm, diameter 5 mm</description>
-<wire x1="-1.651" y1="1.27" x2="-1.397" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-1.397" y1="1.016" x2="-1.397" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-1.397" y1="1.27" x2="-1.143" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-1.397" y1="1.27" x2="-1.397" y2="1.524" width="0.1524" layer="21"/>
-<wire x1="-1.651" y1="0" x2="-0.762" y2="0" width="0.1524" layer="51"/>
-<wire x1="-0.762" y1="0" x2="-0.762" y2="-1.27" width="0.1524" layer="51"/>
-<wire x1="-0.762" y1="-1.27" x2="-0.254" y2="-1.27" width="0.1524" layer="51"/>
-<wire x1="-0.254" y1="-1.27" x2="-0.254" y2="1.27" width="0.1524" layer="51"/>
-<wire x1="-0.254" y1="1.27" x2="-0.762" y2="1.27" width="0.1524" layer="51"/>
-<wire x1="-0.762" y1="1.27" x2="-0.762" y2="0" width="0.1524" layer="51"/>
-<wire x1="0.635" y1="0" x2="1.651" y2="0" width="0.1524" layer="51"/>
-<circle x="0" y="0" radius="2.54" width="0.1524" layer="21"/>
-<pad name="-" x="1.27" y="0" drill="0.8128" diameter="1.6002" shape="octagon"/>
-<pad name="+" x="-1.27" y="0" drill="0.8128" diameter="1.6002"/>
-<text x="2.413" y="1.27" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="2.413" y="-2.413" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="0.254" y1="-1.27" x2="0.762" y2="1.27" layer="51"/>
+grid 1.8 mm, diameter 4 mm</description>
+<wire x1="-1.524" y1="0" x2="-0.762" y2="0" width="0.1524" layer="51"/>
+<wire x1="-0.762" y1="0" x2="-0.762" y2="-1.016" width="0.1524" layer="51"/>
+<wire x1="-0.762" y1="-1.016" x2="-0.254" y2="-1.016" width="0.1524" layer="51"/>
+<wire x1="-0.254" y1="-1.016" x2="-0.254" y2="1.016" width="0.1524" layer="51"/>
+<wire x1="-0.254" y1="1.016" x2="-0.762" y2="1.016" width="0.1524" layer="51"/>
+<wire x1="-0.762" y1="1.016" x2="-0.762" y2="0" width="0.1524" layer="51"/>
+<wire x1="0.635" y1="0" x2="1.524" y2="0" width="0.1524" layer="51"/>
+<wire x1="-1.016" y1="1.397" x2="-0.508" y2="1.397" width="0.1524" layer="21"/>
+<wire x1="-0.762" y1="1.143" x2="-0.762" y2="1.651" width="0.1524" layer="21"/>
+<circle x="0" y="0" radius="2.032" width="0.1524" layer="21"/>
+<pad name="-" x="0.889" y="0" drill="0.7112" diameter="1.4224" shape="octagon"/>
+<pad name="+" x="-0.889" y="0" drill="0.7112" diameter="1.4224"/>
+<text x="2.159" y="0.762" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="2.159" y="-1.778" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="0.254" y1="-1.016" x2="0.762" y2="1.016" layer="51"/>
 </package>
 </packages>
 <packages3d>
@@ -563,11 +561,11 @@ type 0204, grid 5 mm</description>
 <packageinstance name="0204/5_66PADS"/>
 </packageinstances>
 </package3d>
-<package3d name="E2,5-5" urn="urn:adsk.eagle:package:23344/1" type="box">
+<package3d name="E1,8-4" urn="urn:adsk.eagle:package:23336/2" type="model">
 <description>ELECTROLYTIC CAPACITOR
-grid 2.54 mm, diameter 5 mm</description>
+grid 1.8 mm, diameter 4 mm</description>
 <packageinstances>
-<packageinstance name="E2,5-5"/>
+<packageinstance name="E1,8-4_56PADS"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -620,7 +618,7 @@ design rules under a new name.</description>
 <param name="rvPadTop" value="0.25"/>
 <param name="rvPadInner" value="0.25"/>
 <param name="rvPadBottom" value="0.25"/>
-<param name="rvViaOuter" value="0.5"/>
+<param name="rvViaOuter" value="0.45"/>
 <param name="rvViaInner" value="0.25"/>
 <param name="rvMicroViaOuter" value="0.25"/>
 <param name="rvMicroViaInner" value="0.25"/>
@@ -631,7 +629,7 @@ design rules under a new name.</description>
 <param name="rlMinPadBottom" value="10mil"/>
 <param name="rlMaxPadBottom" value="20mil"/>
 <param name="rlMinViaOuter" value="8mil"/>
-<param name="rlMaxViaOuter" value="24mil"/>
+<param name="rlMaxViaOuter" value="20mil"/>
 <param name="rlMinViaInner" value="8mil"/>
 <param name="rlMaxViaInner" value="20mil"/>
 <param name="rlMinMicroViaOuter" value="4mil"/>
@@ -795,17 +793,17 @@ design rules under a new name.</description>
 <attribute name="NAME" x="-4.698" y="41.91" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
 <attribute name="VALUE" x="-4.698" y="37.846" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
-<element name="H2" library="SparkFun-Hardware" library_urn="urn:adsk.eagle:library:519" package="STAND-OFF" package3d_urn="urn:adsk.eagle:package:38630/1" value="STAND-OFF" x="-3.5306" y="32.9438" smashed="yes">
-<attribute name="NAME" x="-3.5306" y="34.9758" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
-<attribute name="VALUE" x="-3.5306" y="30.9118" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
+<element name="H2" library="SparkFun-Hardware" library_urn="urn:adsk.eagle:library:519" package="STAND-OFF" package3d_urn="urn:adsk.eagle:package:38630/1" value="STAND-OFF" x="-55.88" y="-123.19" smashed="yes">
+<attribute name="NAME" x="-55.88" y="-121.158" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
+<attribute name="VALUE" x="-55.88" y="-125.222" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
-<element name="H3" library="SparkFun-Hardware" library_urn="urn:adsk.eagle:library:519" package="STAND-OFF" package3d_urn="urn:adsk.eagle:package:38630/1" value="STAND-OFF" x="-9.8806" y="32.9438" smashed="yes">
-<attribute name="NAME" x="-9.8806" y="34.9758" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
-<attribute name="VALUE" x="-9.8806" y="30.9118" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
+<element name="H3" library="SparkFun-Hardware" library_urn="urn:adsk.eagle:library:519" package="STAND-OFF" package3d_urn="urn:adsk.eagle:package:38630/1" value="STAND-OFF" x="-62.23" y="-123.19" smashed="yes">
+<attribute name="NAME" x="-62.23" y="-121.158" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
+<attribute name="VALUE" x="-62.23" y="-125.222" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
-<element name="H4" library="SparkFun-Hardware" library_urn="urn:adsk.eagle:library:519" package="STAND-OFF" package3d_urn="urn:adsk.eagle:package:38630/1" value="STAND-OFF" x="-16.2306" y="32.9438" smashed="yes">
-<attribute name="NAME" x="-16.2306" y="34.9758" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
-<attribute name="VALUE" x="-16.2306" y="30.9118" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
+<element name="H4" library="SparkFun-Hardware" library_urn="urn:adsk.eagle:library:519" package="STAND-OFF" package3d_urn="urn:adsk.eagle:package:38630/1" value="STAND-OFF" x="-68.58" y="-123.19" smashed="yes">
+<attribute name="NAME" x="-68.58" y="-121.158" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
+<attribute name="VALUE" x="-33.02" y="19.558" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
 <element name="LED1" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="Red" x="30.48" y="39.37" smashed="yes">
 <attribute name="NAME" x="33.655" y="39.9034" size="1.27" layer="25" ratio="10"/>
@@ -825,9 +823,9 @@ design rules under a new name.</description>
 <attribute name="NAME" x="24.8666" y="38.2016" size="0.9906" layer="25" ratio="10" rot="R180"/>
 <attribute name="VALUE" x="24.9936" y="41.6814" size="0.9906" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="C1" library="cta_library_EAGLE" package="E2,5-5" package3d_urn="urn:adsk.eagle:package:23344/1" value="10u" x="32.131" y="6.0706" smashed="yes">
-<attribute name="NAME" x="34.544" y="7.3406" size="1.27" layer="25" ratio="10"/>
-<attribute name="VALUE" x="34.544" y="3.6576" size="1.27" layer="27" ratio="10"/>
+<element name="C1" library="cta_library_EAGLE" package="E1,8-4_56PADS" package3d_urn="urn:adsk.eagle:package:23336/2" value="10u" x="31.75" y="6.604" smashed="yes">
+<attribute name="NAME" x="33.909" y="7.366" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="33.909" y="4.826" size="1.27" layer="27" ratio="10"/>
 </element>
 </elements>
 <signals>
@@ -883,8 +881,8 @@ design rules under a new name.</description>
 <wire x1="30.48" y1="12.7" x2="30.86" y2="12.32" width="0.8128" layer="16"/>
 <wire x1="30.86" y1="12.32" x2="30.86" y2="10.194" width="0.8128" layer="16"/>
 <contactref element="C1" pad="+"/>
-<wire x1="30.86" y1="10.194" x2="30.86" y2="6.0716" width="0.8128" layer="16"/>
-<wire x1="30.86" y1="6.0716" x2="30.861" y2="6.0706" width="0.8128" layer="16"/>
+<wire x1="30.86" y1="10.194" x2="30.86" y2="6.605" width="0.8128" layer="16"/>
+<wire x1="30.86" y1="6.605" x2="30.861" y2="6.604" width="0.8128" layer="16"/>
 </signal>
 <signal name="N$2">
 <contactref element="VR1" pad="P$1"/>
