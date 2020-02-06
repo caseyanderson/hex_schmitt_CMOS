@@ -533,9 +533,9 @@ type 0204, grid 5 mm</description>
 <rectangle x1="-2.032" y1="-0.254" x2="-1.778" y2="0.254" layer="51"/>
 <rectangle x1="1.778" y1="-0.254" x2="2.032" y2="0.254" layer="51"/>
 </package>
-<package name="E1,8-4_56PADS" urn="urn:adsk.eagle:footprint:22840/1" locally_modified="yes">
+<package name="E2-4" urn="urn:adsk.eagle:footprint:22849/1">
 <description>&lt;b&gt;ELECTROLYTIC CAPACITOR&lt;/b&gt;&lt;p&gt;
-grid 1.8 mm, diameter 4 mm</description>
+grid 2 mm, diameter 4 mm</description>
 <wire x1="-1.524" y1="0" x2="-0.762" y2="0" width="0.1524" layer="51"/>
 <wire x1="-0.762" y1="0" x2="-0.762" y2="-1.016" width="0.1524" layer="51"/>
 <wire x1="-0.762" y1="-1.016" x2="-0.254" y2="-1.016" width="0.1524" layer="51"/>
@@ -543,13 +543,14 @@ grid 1.8 mm, diameter 4 mm</description>
 <wire x1="-0.254" y1="1.016" x2="-0.762" y2="1.016" width="0.1524" layer="51"/>
 <wire x1="-0.762" y1="1.016" x2="-0.762" y2="0" width="0.1524" layer="51"/>
 <wire x1="0.635" y1="0" x2="1.524" y2="0" width="0.1524" layer="51"/>
-<wire x1="-1.016" y1="1.397" x2="-0.508" y2="1.397" width="0.1524" layer="21"/>
-<wire x1="-0.762" y1="1.143" x2="-0.762" y2="1.651" width="0.1524" layer="21"/>
-<circle x="0" y="0" radius="2.032" width="0.1524" layer="21"/>
-<pad name="-" x="0.889" y="0" drill="0.7112" diameter="1.4224" shape="octagon"/>
-<pad name="+" x="-0.889" y="0" drill="0.7112" diameter="1.4224"/>
-<text x="2.159" y="0.762" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="2.159" y="-1.778" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<wire x1="-0.762" y1="1.524" x2="-0.254" y2="1.524" width="0.1524" layer="21"/>
+<wire x1="-0.508" y1="1.27" x2="-0.508" y2="1.778" width="0.1524" layer="21"/>
+<wire x1="0.381" y1="1.524" x2="0.889" y2="1.524" width="0.1524" layer="21"/>
+<circle x="0" y="0" radius="2.159" width="0.1524" layer="21"/>
+<pad name="-" x="1.016" y="0" drill="0.8128" diameter="1.27" shape="octagon"/>
+<pad name="+" x="-1.016" y="0" drill="0.8128" diameter="1.27"/>
+<text x="2.159" y="0.889" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="2.159" y="-2.159" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="0.254" y1="-1.016" x2="0.762" y2="1.016" layer="51"/>
 </package>
 </packages>
@@ -561,11 +562,11 @@ type 0204, grid 5 mm</description>
 <packageinstance name="0204/5_66PADS"/>
 </packageinstances>
 </package3d>
-<package3d name="E1,8-4" urn="urn:adsk.eagle:package:23336/2" type="model">
+<package3d name="E2-4" urn="urn:adsk.eagle:package:23347/1" type="box">
 <description>ELECTROLYTIC CAPACITOR
-grid 1.8 mm, diameter 4 mm</description>
+grid 2 mm, diameter 4 mm</description>
 <packageinstances>
-<packageinstance name="E1,8-4_56PADS"/>
+<packageinstance name="E2-4"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -823,9 +824,9 @@ design rules under a new name.</description>
 <attribute name="NAME" x="24.8666" y="38.2016" size="0.9906" layer="25" ratio="10" rot="R180"/>
 <attribute name="VALUE" x="24.9936" y="41.6814" size="0.9906" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="C1" library="cta_library_EAGLE" package="E1,8-4_56PADS" package3d_urn="urn:adsk.eagle:package:23336/2" value="10u" x="31.75" y="6.604" smashed="yes">
-<attribute name="NAME" x="33.909" y="7.366" size="1.27" layer="25" ratio="10"/>
-<attribute name="VALUE" x="33.909" y="4.826" size="1.27" layer="27" ratio="10"/>
+<element name="C1" library="cta_library_EAGLE" package="E2-4" package3d_urn="urn:adsk.eagle:package:23347/1" value="10u" x="-68.58" y="-137.16" smashed="yes">
+<attribute name="NAME" x="-66.421" y="-136.271" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="-66.421" y="-139.319" size="1.27" layer="27" ratio="10"/>
 </element>
 </elements>
 <signals>
@@ -852,6 +853,7 @@ design rules under a new name.</description>
 <vertex x="5.08" y="22.86"/>
 </polygon>
 <contactref element="C1" pad="-"/>
+<wire x1="11.308" y1="27.448" x2="-67.564" y2="-137.16" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$3">
 <contactref element="X1" pad="1"/>
@@ -880,9 +882,9 @@ design rules under a new name.</description>
 <wire x1="22.86" y1="12.7" x2="30.48" y2="12.7" width="0.8128" layer="16"/>
 <wire x1="30.48" y1="12.7" x2="30.86" y2="12.32" width="0.8128" layer="16"/>
 <wire x1="30.86" y1="12.32" x2="30.86" y2="10.194" width="0.8128" layer="16"/>
-<contactref element="C1" pad="+"/>
 <wire x1="30.86" y1="10.194" x2="30.86" y2="6.605" width="0.8128" layer="16"/>
-<wire x1="30.86" y1="6.605" x2="30.861" y2="6.604" width="0.8128" layer="16"/>
+<contactref element="C1" pad="+"/>
+<wire x1="30.86" y1="6.605" x2="-69.596" y2="-137.16" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$2">
 <contactref element="VR1" pad="P$1"/>
